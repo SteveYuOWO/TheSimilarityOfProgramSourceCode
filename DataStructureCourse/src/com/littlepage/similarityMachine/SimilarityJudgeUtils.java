@@ -48,7 +48,8 @@ public class SimilarityJudgeUtils {
 			}
 			if(fr!=null) fr.close();
 		} catch (IOException e) {
-			e.printStackTrace();
+			System.err.println("找不到该文件");
+			System.exit(-1);
 		}
 		return strFile;
 	}

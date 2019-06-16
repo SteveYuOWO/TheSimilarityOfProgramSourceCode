@@ -12,7 +12,7 @@ public class SimilarityMachineClient {
 		double analysis=SimilarityJudgeUtils.detectionTwoFile(fileName1, fileName2);
 		System.out.printf("分析结果:\n两份源代码的相似度为:   %.2f",analysis);
 		sc.close();
-		//D:\eclipse sts workspace\DataStructureCourse\BinaryNode.java
-		//D:\eclipse sts workspace\DataStructureCourse\Person.java
+		//C:\Users\74302\git\DataStructureCourseAssignment-TheSimilarityOfProgramSourceCode\DataStructureCourse\BinaryNode.java
+		//C:\Users\74302\git\DataStructureCourseAssignment-TheSimilarityOfProgramSourceCode\DataStructureCourse\Person.java
 	}
 }
