@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>470</x>
+      <y>70</y>
+      <w>300</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>HashTable
+&lt;&lt;class&gt;&gt;
+Package::com.littlepage.similarityMachine
+--
+SeqList&lt;Object&gt;[] key  
+SeqList&lt;Object&gt;[] value; 
+--
+void push(K key,V value)
+V getValue(K key)
+String toString()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>150</x>
+      <y>70</y>
+      <w>300</w>
+      <h>310</h>
+    </coordinates>
+    <panel_attributes>SeqList
+&lt;&lt;class&gt;&gt;
+Package::com.littlepage.similarityMachine
+--
+private final int INITIAL_CAPACITY=10;
+private Object[] element;
+private int size;
+private int capacity;  
+--
+int getSize() 
+int getCapacity()
+String toString() 
+int insert(int index,T value) 
+int insert(T value)
+T remove(int index) 
+T remove(T value) 
+removeAll() 
+set(int index,T value) 
+T get(int index) 
+boolean contains(Object obj) 
+int indexOf(Object obj) </panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>320</x>
+      <y>420</y>
+      <w>300</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>JudgeUtils
+&lt;&lt;class&gt;&gt;
+Package::com.littlepage.similarityMachine
+--
+--
+String[] IDENTIFIED_PHRASE
+String getStringFromFile(String fileName)
+HashTable&lt;String, Integer&gt; countKeywords(String[] str)
+detectionTwoFile(String fileName1,String fileName2) 
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>350</x>
+      <y>370</y>
+      <w>60</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+</panel_attributes>
+    <additional_attributes>10.0;10.0;40.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>520</x>
+      <y>210</y>
+      <w>110</w>
+      <h>230</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+</panel_attributes>
+    <additional_attributes>90.0;10.0;10.0;210.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>420</x>
+      <y>630</y>
+      <w>100</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>Client
+&lt;&lt;class&gt;&gt;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>460</x>
+      <y>560</y>
+      <w>30</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;70.0</additional_attributes>
+  </element>
+</diagram>
