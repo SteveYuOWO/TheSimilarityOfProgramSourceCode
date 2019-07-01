@@ -39,15 +39,25 @@ public class SeqList<T>{
 			insert(array[i]);
 		}
 	}
-	
+	/**
+	 * get the count of element
+	 * @return
+	 */
 	public int getSize() {
 		return size;
 	}
-
+	
+	/**
+	 * get the capacity
+	 * @return
+	 */
 	public int getCapacity() {
 		return capacity;
 	}
 
+	/**
+	 * toString method
+	 */
 	public String toString() {
 		StringBuilder str=new StringBuilder();
 		str.append("[");
