@@ -8,8 +8,7 @@ package com.littlepage.similarityMachine;
  * The SeqList initial capacity is 10. And the capacity is 1.5 times as large as initial capacity
  * 
  * @author Steve Yu
- * @param <K> the key of HashTable
- * @param <V> the value of HashTable
+ * 
  */
 
 public class SeqList<T>{
